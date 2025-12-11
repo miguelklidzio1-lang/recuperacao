@@ -37,16 +37,8 @@ function mostrar() {
             input2.className = "inputEdit";
 
             li.replaceChild(input2, span);
-            input2.focus();
-
-            input2.onblur = function () {
-                if (input2.value.trim() !== "") {
-                    item.nome = input2.value;
-                }
                 mostrar();
             };
-
-            
         };
 
         let exc = document.createElement("button");
@@ -61,7 +53,7 @@ function mostrar() {
         li.appendChild(span);
         li.appendChild(edit);
         li.appendChild(exc);
-
         ul.appendChild(li);
     }
 }
+
